@@ -14,7 +14,7 @@ public class DatabaseFacade {
  
 		List<String> result = new ArrayList<String>();
 		
-		int a = 1;
+	
 		
 
 		try (Connection connection = DriverManager.getConnection("jdbc:postgresql://localhost:5432/postgres",
