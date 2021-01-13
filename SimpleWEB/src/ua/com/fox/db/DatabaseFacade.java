@@ -14,6 +14,8 @@ public class DatabaseFacade {
  
 		List<String> result = new ArrayList<String>();
 		
+		int a = 1;
+		
 
 		try (Connection connection = DriverManager.getConnection("jdbc:postgresql://localhost:5432/postgres",
 
@@ -23,7 +25,7 @@ public class DatabaseFacade {
 			System.out.println("Java JDBC PostgreSQL Example");	
 
 			System.out.println("Connected to PostgreSQL database!");
-	        Statement statement = connection.createStatement() ;
+	        Statement statement = connection.createStatement();
 	
 	        ResultSet resultSet = statement.executeQuery("SELECT * FROM books.books");
 	        while (resultSet.next()) {
